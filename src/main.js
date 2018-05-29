@@ -12,5 +12,25 @@ $(document).ready(function(){
   $("#choiceC").text(question1.choiceC);
   $("#choiceD").text(question1.choiceD);
 
+  $('form#questionForm').submit(function(event){
+    $('#questionForm').hide();
+    event.preventDefault();
+    var choice=$('input:radio[name=choice]:checked').val();
+    if (choice==question1.correctAnswer){
+      $('#congrats').toggle();
+      $('#nextButton').show();
+    }
+    else {
+      $('#failure').toggle();
+      $('#nextButton').show();
+    }
+  });
+
+  $('#nextButton').click(function(){
+    $('#questionForm').show();
+    $('#nextButton').hide();
+    $('#congrats').hide();
+    $('#failure').hide();
+  });
 
 });

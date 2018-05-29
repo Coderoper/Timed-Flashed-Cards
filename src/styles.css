@@ -1,0 +1,10 @@
+#congrats {
+  display: none;
+}
+#failure {
+  display:none;
+}
+
+#nextButton{
+  display:none;
+}

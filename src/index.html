@@ -6,9 +6,10 @@
   </head>
   <body>
   <div class="container">
-    <h3><span id="questionPrompt"></span></h3>
+
     <div class="col-md-3">
       <form id="questionForm">
+        <h3><span id="questionPrompt"></span></h3>
         <input type="radio" name="choice" value="A">
         <label id="labelA">A. <span id="choiceA"></span></label>
         <br>
@@ -23,7 +24,11 @@
         <br>
         <button type="submit" class="btn btn-primary">Submit Answer</button>
       </form>
+      <button id="nextButton" type="button" class="btn btn-warning">Next Question</button>
+      <h1 id="congrats">Good job, you! You got it right, big guy :)</h1>
+      <h1 id="failure">You got it wrong! Open up your ears, idiot!</h1>
     </div>
+
   </div>
 
   </body>
